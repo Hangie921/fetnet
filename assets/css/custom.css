@@ -2915,3 +2915,16 @@ color: white;
   width: 830px;
 }
 
+
+
+/*customized class*/
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.no_pad {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
