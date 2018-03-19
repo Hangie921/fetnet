@@ -2950,3 +2950,66 @@ color: white;
   margin-top: -11px;
   margin-right: -5px;
 }
+
+.section_with_list .title {
+  background: #bc0e3b;
+  color: #fff;
+  font-size: 22px;
+  height: 32px;
+}
+
+/*for the badge*/
+.section_with_list .more {
+  top: -3px;
+  left: 14px;  /* 18-4(px when inline) */
+  position: relative;
+  display: inline-block;
+}
+
+.section_with_list .content_list {
+  list-style-type: none;
+}
+
+.section_with_list .list_item {
+}
+
+.section_with_list .list_item span {
+  display: block;
+  position: relative;
+}
+
+.section_with_list .list_item > span::before {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  color: inherit;
+  background-color: #bc0e3b;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: -19px;
+  top: 12px;
+  border-radius: 50%;
+}
+
+.section_with_list .content_list_group {
+  border-bottom: 1px solid #efefef;
+}
+
+
+/*pick section*/
+
+
+.pick_list{
+  list-style: none;
+}
+
+.pick_list_item {
+  position: relative;
+}
+
+.pick_list_item .fa-arrow-circle-right {
+  position: absolute;
+  left: -26px;
+  top:4px;
+}
