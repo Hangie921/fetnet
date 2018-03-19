@@ -2928,3 +2928,25 @@ color: white;
   padding-left: 0!important;
   padding-right: 0!important;
 }
+
+/*for event-info.html page;*/
+.feature {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.feature_list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.feature_list li{
+  list-style-type: none;
+  font-size: 14px;;
+}
+
+.feature_list .icon {
+  margin-top: -11px;
+  margin-right: -5px;
+}
