@@ -2951,11 +2951,16 @@ color: white;
   margin-right: -5px;
 }
 
+.imgBox .function_box {
+  display: flex;
+  align-items: space-between;
+}
+
 .section_with_list .title {
-  background: #bc0e3b;
+  background: #a40000;
   color: #fff;
-  font-size: 22px;
-  height: 32px;
+  font-size: 1.5rem;
+  padding: 5px;
 }
 
 /*for the badge*/
@@ -2964,6 +2969,14 @@ color: white;
   left: 14px;  /* 18-4(px when inline) */
   position: relative;
   display: inline-block;
+}
+
+.section_with_list .more:hover {
+  text-decoration: none;
+}
+
+.section_with_list .more:hover span {
+  color: #fff100;
 }
 
 .section_with_list .content_list {
@@ -2994,11 +3007,12 @@ color: white;
 
 .section_with_list .content_list_group {
   border-bottom: 1px solid #efefef;
+  font-size: 1.18rem;
+  line-height: 1.8;
 }
 
 
 /*pick section*/
-
 
 .pick_list{
   list-style: none;
@@ -3006,6 +3020,7 @@ color: white;
 
 .pick_list_item {
   position: relative;
+  font-size: 1.18rem;
 }
 
 .pick_list_item .fa-arrow-circle-right {
