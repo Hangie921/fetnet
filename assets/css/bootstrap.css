@@ -835,7 +835,7 @@ mark, .mark {
   max-width: 100%;
 }
 
-.col-6.col-6-fixed {
+.col-6-fixed {
   flex: 0 0 50%;
   max-width: 50%;
 }

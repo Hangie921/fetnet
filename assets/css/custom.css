@@ -2924,6 +2924,13 @@ color: white;
   margin: 0 auto;
 }
 
+@@media (max-width: 767px) {
+  .col-centered-sm {
+    float: none:
+    margin: 0 auto;
+  }
+}
+
 .no_pad {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -2978,6 +2985,11 @@ color: white;
 .imgBox .function_box {
   display: flex;
   align-items: space-between;
+}
+
+.section_with_list {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section_with_list .title {
