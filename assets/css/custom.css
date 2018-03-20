@@ -2925,8 +2925,20 @@ color: white;
 }
 
 .no_pad {
-  padding-left: 0!important;
-  padding-right: 0!important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.no_pad-xs {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (min-width:567px) {
+  .no_pad-xs {
+    padding-left: inital;
+    padding-right: inital;;
+  }
 }
 
 /*for event-info.html page;*/
