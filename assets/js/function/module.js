@@ -33,7 +33,7 @@ $("#module-menu-sub").load("module/module-menu-sub.html", function () {
       '嚴選輕鬆配': 1,
       '優惠搶先報': 2, //event-cloud-1.html
       '好用才敢大聲': 3, //article-list.html
-      '直營門市專區': 4
+      '直營門市體驗': 4
     };
     var mapPathObject = {
       'type01': 'event-cloud-1.html',
