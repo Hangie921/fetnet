@@ -33,7 +33,7 @@ $(function(){
 
         setTimeout(function () {
           $('a[href="' + window.location.hash + '"]').tab('show');
-        }, 300);
+        }, 10);
     }
 });
 
