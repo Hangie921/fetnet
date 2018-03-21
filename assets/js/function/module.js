@@ -2,11 +2,9 @@ $("#module-nav-mobile").load("module/nav-mobile.html");
 $("#module-footer").load("module/footer.html");
 $("#module-event-info").empty()
 $("#module-event-info").load("module/event-info.html", function(){
-  console.log('load event-info.html');
   $("#module-event-info-office365").empty()
   if (window.location.pathname.split('/').pop() === "event-cloud-1.html"){
     $("#module-event-info-office365").load("module/event-info-office365.html", function(){
-      console.log('load office365');
       $('#solution a').on('click', function () {
         var mapObject = {
           '優惠搶先報': 'type01', //event-cloud-1.html
@@ -26,7 +24,7 @@ $("#module-video-large").load("module/video-large.html");
 
 //////// Sub menu ////////
 $("#module-menu-sub").load("module/module-menu-sub.html", function () {
-
+  console.log('done loading submenu');
   $('#module-menu-sub .submenu .nav-item').on('click', function(){
     console.log('click the sub');
     // window.localStorage.removeItem('activeItem');

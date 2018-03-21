@@ -170,7 +170,7 @@
         <div class="container py-13 px-md-10">
             <div class="tab-content">
             <!-- 雲端辦公案例 -->
-                <div class="tab-pane fade show active" id="tab-office" role="tabpanel">
+                <div class="tab-pane fade" id="tab-office" role="tabpanel">
                     <div class="h3 font-weight-bold text-center text-danger">雲端辦公</div>
                     <div class="row">
 
@@ -322,13 +322,29 @@
     <script src="assets/js/vendor/jquery.scrollUp.min.js"></script>
     <script src="assets/js/vendor/jquery.tableHeadFixer.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/function/module.js"></script>
+
     <script>
         // Tab Link
+        var POS = '#tab-pos'
+        var OFFICE = '#tab-office'
         var hash = document.location.hash;
-        var prefix = "tab_";
-        console.log('hash is', hash)
-        if (hash) {
-            $('.nav-tabs a[href=' + hash.replace(prefix, "") + ']').tab('show');
+        var prefix = "tab_"
+        if (hash === POS) {
+          $(OFFICE).removeClass("show active").attr('aria-expanded', false)
+          $(POS).addClass("show active").attr('aria-expanded', true)
+          window.location.hash = POS
+          setTimeout(function () {
+            $("#pos_anchor").addClass('active')
+          }, 300)
+        } else {
+          $(POS).removeClass("show active").attr('aria-expanded', false)
+          $(OFFICE).addClass("show active").attr('aria-expanded', true)
+          window.location.hash = OFFICE
+          setTimeout(function () {
+            $('#office_anchor').addClass('active')
+          }, 300)
         }
         // Change hash for page-reload
         $('.nav-tabs a').on('shown', function (e) {
@@ -336,7 +352,6 @@
         });
     </script>
     <!-- 程式可自行改成其他include用法-->
-    <script src="assets/js/function/module.js"></script>
 
 </body>
 

@@ -27,6 +27,10 @@ $(function(){
             return;
         }
 
+        if (window.location.href.indexOf('article-list.html') !== -1) {
+          return
+        }
+
         setTimeout(function () {
           $('a[href="' + window.location.hash + '"]').tab('show');
         }, 300);
