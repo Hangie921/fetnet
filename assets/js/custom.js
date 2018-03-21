@@ -7,36 +7,37 @@ window.api = {};
 $(function(){
     //jquery.scrollUp
     $.scrollUp({
-        scrollImg: true, 
+        scrollImg: true,
     });
-    
+
     $('.btn-anchor').click(function(){
 		$('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top-70}, 750);
 		return false;
     });
 
-    if (window.localStorage.getItem('activeItem')) {
-        setTimeout(function () {
-            $('a[href="' + window.localStorage.getItem('activeItem') + '"]').tab('show');
-        }, 300);
-    }
-    
+    // if (window.localStorage.getItem('activeItem')) {
+    //     setTimeout(function () {
+    //         $('a[href="' + window.localStorage.getItem('activeItem') + '"]').tab('show');
+    //     }, 300);
+    // }
+
     if (window.location.hash) {
         if (window.location.hash === '#content'){
             return;
         }
+
         setTimeout(function () {
-            $('a[href="' + window.location.hash + '"]').tab('show');
+          $('a[href="' + window.location.hash + '"]').tab('show');
         }, 300);
     }
 });
 
 $(document).ready(function() {
-//    $(".table-data").tableHeadFixer({"head" : true}); 
-//    $(".table-data").tableHeadFixer({"head" : true, "left" : 1}); 
-//    $(".table-data-2").tableHeadFixer({"head" : true, "left" : 2}); 
-//    $(".table-data-left2").tableHeadFixer({"head" : false, "left" : 2}); 
+//    $(".table-data").tableHeadFixer({"head" : true});
+//    $(".table-data").tableHeadFixer({"head" : true, "left" : 1});
+//    $(".table-data-2").tableHeadFixer({"head" : true, "left" : 2});
+//    $(".table-data-left2").tableHeadFixer({"head" : false, "left" : 2});
 });
 
 

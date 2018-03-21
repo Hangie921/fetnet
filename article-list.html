@@ -326,6 +326,7 @@
         // Tab Link
         var hash = document.location.hash;
         var prefix = "tab_";
+        console.log('hash is', hash)
         if (hash) {
             $('.nav-tabs a[href=' + hash.replace(prefix, "") + ']').tab('show');
         }
