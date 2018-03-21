@@ -3022,9 +3022,10 @@ color: white;
 .section_with_list .list_item {
 }
 
-.section_with_list .list_item span {
+.section_with_list .list_item > span {
   display: block;
   position: relative;
+  padding-left: 20px;
 }
 
 .section_with_list .list_item > span::before {
@@ -3036,8 +3037,8 @@ color: white;
   width: 8px;
   height: 8px;
   position: absolute;
-  left: -19px;
-  top: 12px;
+  left: 2px;
+  top: 14px;
   border-radius: 50%;
 }
 
@@ -3047,6 +3048,16 @@ color: white;
   line-height: 1.8;
 }
 
+
+.title_group {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content_list {
+  padding-left: 0;
+
+}
 
 /*pick section*/
 
