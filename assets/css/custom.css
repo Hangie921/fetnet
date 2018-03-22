@@ -2956,6 +2956,10 @@ color: white;
   border-bottom: 1px solid #efefef;
 }
 
+.feature > h5 {
+  font-weight: 700;
+}
+
 /*defatul is the mobile style*/
 
 .feature_list {
