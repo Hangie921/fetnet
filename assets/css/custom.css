@@ -2959,24 +2959,12 @@ color: white;
 /*defatul is the mobile style*/
 
 .feature_list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  padding-right: 0;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  .feature_list {
-    flex-wrap: nowrap;
-  }
 }
 
 .feature_list li{
   list-style-type: none;
   font-size: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: list-item;
 }
 
 .feature_list .icon{
