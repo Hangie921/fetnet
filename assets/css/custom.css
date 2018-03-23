@@ -3010,6 +3010,10 @@ color: white;
   }
 }
 
+.function_box > a {
+  cursor: pointer;
+}
+
 .function_box .img-thumbnail {
   border:none;
   background: transparent;
