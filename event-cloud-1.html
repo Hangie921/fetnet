@@ -191,6 +191,15 @@
 
     <!-- 程式可自行改成其他include用法-->
     <script src="assets/js/function/module.js"></script>
+    <script type="text/javascript">
+      setTimeout(function () {
+        if (window.location.href.indexOf('#tab-supportBoss') !== -1) {
+          $('#supportBoss').addClass('active')
+        } else {
+          $('#tabRestaurant').addClass('active')
+        }
+      }, 100)
+    </script>
 
 </body>
 
