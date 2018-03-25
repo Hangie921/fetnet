@@ -2064,6 +2064,49 @@ a.active .icon-menu-place {
   }
 }
 
+/*for new 服務介紹*/
+.service_section .btn {
+  padding: .3rem .8rem;
+}
+.service_section .name {
+  font-size: 1.18rem;
+  background: #266faf;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-right: 26px;
+}
+
+.service_section .ps {
+  padding-left: 0;
+}
+
+.service_section.sales .name.btn {
+  background: #475d5b;
+}
+
+.service_section.contact .name.btn {
+  background: #eb7c03;
+}
+
+.service_section .ps {
+  font-size: 1rem;
+  color: #333;
+}
+
+.service_section a.btn {
+  border:1px solid #333;
+  margin-right: 26px; /* 30px - 4px(from dispaly-inline block)*/
+  color: #333;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.service_section a.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+
 .section-case .label {
   display: block;
   margin-bottom: 20px;
