@@ -2065,6 +2065,12 @@ a.active .icon-menu-place {
 }
 
 /*for new 服務介紹*/
+@media (min-width: 768px) {
+  .service_section.sales{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+}
 .service_section .btn {
   padding: .3rem .8rem;
 }
