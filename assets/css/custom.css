@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 ﻿body {
   padding-top: 64px;
 }
@@ -2075,15 +2078,24 @@ a.active .icon-menu-place {
   padding: .3rem .8rem;
 }
 .service_section .name {
-  font-size: 1.18rem;
+  font-size: 1.3rem;
   background: #266faf;
   color: #fff;
   letter-spacing: 2px;
-  margin-right: 26px;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .service_section .name {
+    margin-right: 14px;
+  }
 }
 
 .service_section .ps {
   padding-left: 0;
+  font-size: 1.18rem;
+  color: #333;
+
 }
 
 .service_section.sales .name.btn {
@@ -2094,17 +2106,18 @@ a.active .icon-menu-place {
   background: #eb7c03;
 }
 
-.service_section .ps {
-  font-size: 1rem;
-  color: #333;
-}
-
 .service_section a.btn {
   border:1px solid #333;
-  margin-right: 26px; /* 30px - 4px(from dispaly-inline block)*/
+  margin-right: 8px; /* 30px - 4px(from dispaly-inline block)*/
   color: #333;
-  font-size: 1rem;
+  font-size: 1.18rem;
   letter-spacing: 2px;
+}
+
+@media (min-width:768px) {
+  .service_section a.btn {
+    margin-right: 14px;
+  }
 }
 
 .service_section a.btn:hover {
