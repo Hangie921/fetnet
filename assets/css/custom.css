@@ -1058,6 +1058,7 @@ header .input-group-search {
   opacity: .8;
 }
 
+.btn-buy,
 .btn-signup,
 .btn-location,
 .btn-gift {
@@ -1067,12 +1068,16 @@ header .input-group-search {
   border-radius: 50px;
 }
 
+.btn-buy i,
 .btn-signup i,
 .btn-location i,
 .btn-gift i {
   top: 0;
 }
 
+.btn-buy:hover,
+.btn-buy:focus,
+.btn-buy:active,
 .btn-signup:hover,
 .btn-signup:focus,
 .btn-signup:active,
@@ -1123,6 +1128,50 @@ header .input-group-search {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+
+.btn-buy {
+  color: #fff;
+  background-color: #1b5488;
+  border-color: #1b5488;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  letter-spacing: 3px;
+}
+
+.btn-buy:hover {
+  color: #fff;
+  background-color: #002f5b;
+  border-color: #002f5b;
+}
+
+.btn-buy:focus,
+.btn-buy.focus {
+  box-shadow: 0 0 0 2px rgba(24, 77, 127, 0.5);
+}
+
+.btn-buy.disabled,
+.btn-buy:disabled {
+  background-color: #134370;
+  border-color: #134370;
+}
+
+.btn-buy:active,
+.btn-buy.active,
+.show > .btn-buy.dropdown-toggle {
+  color: #fff;
+  background-color: #184d7f;
+  background-image: none;
+  border-color: #184d7f;
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+
+
+
+
 
 .btn-location {
   color: #fff;
@@ -1600,6 +1649,21 @@ a.active .icon-menu-place {
   width: 42px;
   height: 39px;
   background-image: url("../img/ui/icon-marker.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
+  .icon-buyer {
+    background-image: url("../img/ui/icon-buy@2x.png");
+    -moz-background-size: 100%, 100%;
+    -o-background-size: 100%, 100%;
+    -webkit-background-size: 100%, 100%;
+    background-size: 100%, 100%;
+  }
+}
+.icon-buyer {
+  width: 42px;
+  height: 39px;
+  background-image: url("../img/ui/icon-buy.png");
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
@@ -3096,7 +3160,7 @@ color: white;
 /*for the badge*/
 .section_with_list .more {
   top: -3px;
-  left: 14px;  /* 18-4(px when inline) */
+  left: 20px;  /* 18-4(px when inline) */
   position: relative;
   display: inline-block;
 }
